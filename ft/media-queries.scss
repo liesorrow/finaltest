@@ -1,0 +1,679 @@
+@import './scss/palette.scss';
+@import './scss/mixins.scss';
+* {
+    margin: 0 auto;
+}
+
+@media (min-width:320px) and (max-width: 425px){
+.header{
+    width: 320px;
+    min-height: 536px;
+    margin: 0 auto;
+    background: url(./image/Bitmap.mobile.png)center no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.header__one {
+    position: relative;
+    width: 100%;
+    min-height: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__logo {
+    position: relative;
+    top: 128px;
+    left: 89px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.header__btn {
+    padding: 10px 10px;
+    position: relative;
+    left: -153px;
+    top: 29px;
+    display: inline;
+    list-style-type: none;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.header__link {
+    padding: 8px 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header__link__btn {
+    text-align: center;
+    position: relative;
+    left: 81px;
+    top: -28px;
+    display: block;
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+}
+.header__two {
+    text-align: center;
+    margin: 122px auto;
+    height: 126px;
+    width: 320px;
+}
+
+.header__text__title {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: $white;
+}
+.header__text__para {
+    text-align: center;
+    margin: 22px auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: $white;
+}
+
+.header__button {
+    position: relative;
+    top: 13px;
+    left: 10px;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    background: #FF4E50;
+    border-radius: 40px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+    cursor: pointer;
+}
+main {
+    position: relative;
+    width: 320px;
+    min-height: 461px;
+    margin: 0 auto;
+}
+.about__dreamshare {
+    margin: 94px auto;
+    width: 320px;
+    height: 461px;
+}
+
+.dreamshare__title {
+    position: relative;
+    width: 342px;
+    height: 2px;
+    left: 15px;
+    top: -59px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #444444;
+}
+@mixin dreamshare__img__($dreamshare__img-width, $dreamshare__img-height) {
+    width: 300px;
+    height: 240px;
+}
+
+.dreamshare__img__one {
+    @include dreamshare__img__(300px, 240px);
+    position: relative;
+    top: -78px;
+    left: 9px;
+    background: url(./image/Step\ 1\ image\ mobile.png);
+    float: left;
+}
+
+.dreamshare__img__two {
+    @include dreamshare__img__(300px, 240px);
+    position: relative;
+    top: -138px;
+    left: 9px;
+    background: url(./image/Step\ 2\ image\ mobile.png);
+    float: left;
+}
+
+.dreamshare__img__three {
+    @include dreamshare__img__(300px, 240px);
+    position: relative;
+    top: -198px;
+    left: 9px;
+    background: url(./image/Step\ 3\ image\ mobile.png);
+    float: left;
+}
+@mixin section__btn__($section__btn-width, $section__btn-height, $section__btn-background, $section__btn-border-radius, $section__btn-font-family, $section__btn-font-weight, $section__btn-font-size) {
+    height: 20px;
+    width: 70px;
+    background: $coral;
+    border-radius: 40px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.section__btn__one {
+    @include section__btn__(70px, 20px, $coral, 40px, 'Montserrat', 400, 10px);
+    border: none;
+    cursor: pointer;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    top: 64px;
+    left: 22px;
+}
+
+.section__btn__two {
+    @include section__btn__(70px, 20px, $coral, 40px, 'Montserrat', 400, 10px);
+    border: none;
+    cursor: pointer;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    top: 96px;
+    left: 22px;
+}
+
+.section__btn__three {
+    @include section__btn__(70px, 20px, $coral, 40px, 'Montserrat', 400, 10px);
+    border: none;
+    cursor: pointer;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    top: 61px;
+    left: 21px;
+}
+@mixin step__title__($step__title-position, $step__title-width, $step__title-height, $step__title-font-family, $step__title-font-style, $step__title-font-weight, $step__title-font-size, $step__title-color) {
+    position: absolute;
+    width: 250px;
+    height: 58px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: $white;
+}
+
+.step__title__one {
+    @include step__title__(absolute, 250px, 58px, 'Montserrat', normal, 700, 24px, $white);
+    top: 132px;
+    right: 28px;
+    line-height: 14px;
+}
+
+.step__title__two {
+    @include step__title__(absolute, 250px, 58px, 'Montserrat', normal, 700, 24px, $white);
+    top: 144px;
+    right: 29px;
+    line-height: 14px;
+}
+
+.step__title__three {
+    @include step__title__(absolute, 250px, 58px, 'Montserrat', normal, 700, 24px, $white);
+    top: 131px;
+    right: 29px;
+    line-height: 14px;
+}
+
+@mixin step__text__($step__text-position, $step__text-width, $step__text-height, $step__text-font-family, $step__text-font-style, $step__text-font-weight, $step__text-font-size, $step__text-color) {
+    position: absolute;
+    width: 250px;
+    height: 58px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #E3E3E3;
+}
+
+.step__text__one {
+    @include step__text__(absolute, 250px, 58px, 'Roboto', normal, 300, 14px, #E3E3E3);
+    top: 183px;
+    left: 22px;
+    line-height: 14px;
+}
+
+.step__text__two {
+    @include step__text__(absolute, 250px, 58px, 'Roboto', normal, 300, 14px, #E3E3E3);
+    top: 184px;
+    left: 21px;
+    line-height: 14px;
+}
+
+.step__text__three {
+    @include step__text__(absolute, 250px, 58px, 'Roboto', normal, 300, 14px, #E3E3E3);
+    top: 184px;
+    left: 21px;
+    line-height: 14px;
+}
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 320px;
+    height: 1273px;
+}
+
+.partner__logo {
+    width: 280px;
+    height: 54px;
+    text-align: center;
+    position: absolute;
+    top: 761px;
+    left: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+}
+
+.person {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: 221px;
+    height: 249px;
+    background: #FFFFFF;
+}
+
+.partner__picture {
+    position: relative;
+    top: 4px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.person__name {
+    position: relative;
+    width: 221px;
+    height: 18px;
+    left: 0px;
+    top: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: $dark;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.person__one{
+    position: relative;
+    top: -143px;
+    left: 0px;
+}
+.person__two{
+    position: relative;
+    top: 6px;
+    left: 0px;
+}
+.person__three{
+    position: relative;
+    top: -557px;
+    left: -1px;
+}
+.person__four{
+    position: relative;
+    top: -412px;
+    left: -2px;
+}
+@mixin about__person__firstType($about__person__firstType-position, $about__person__firstType-top, $about__person__firstType-left, $about__person__firstType-width, $about__person__firstType-height, $about__person__firstType-font-family, $about__person__firstType-font-style, $about__person__firstType-font-weight, $about__person__firstType-font-size, $about__person__firstType-text-align, $about__person__firstType-color) {
+    position: relative;
+    top: 35px;
+    left: 0px;
+    width: 221px;
+    height: 57px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+}
+
+@mixin about__person__secondType($about__person__secondType-position, $about__person__secondType-top, $about__person__secondType-left, $about__person__secondType-width, $about__person__secondType-height, $about__person__secondType-font-family, $about__person__secondType-font-style, $about__person__secondType-font-weight, $about__person__secondType-font-size, $about__person__secondType-text-align, $about__person__secondType-color) {
+    position: relative;
+    top: 40px;
+    left: 6px;
+    width: 221px;
+    height: 57px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+}
+
+.about__person__firstType {
+    @include about__person__firstType(relative, 40px, 6px, 221px, 57px, 'Roboto', normal, 300, 14px, center, #666666)
+}
+
+.about__person__secondType {
+    @include about__person__secondType(relative, 38px, 0px, 221px, 57px, 'Roboto', normal, 300, 14px, center, #666666)
+}
+.partners__button {
+    position: absolute;
+    width: 279px;
+    height: 40px;
+    left: 19px;
+    top: 1754px;
+    background: #FFFFFF;
+    border: 2px solid #FF4E50;
+    border-radius: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FF4E50;
+    cursor: pointer;
+}
+.discover__holiday__activity__ideas {
+    width: 320px;
+    height: 1031px;
+}
+.discover__holiday__activity__ideas__logo {
+    width: 280px;
+    height: 54px;
+    text-align: center;
+    position: absolute;
+    top: 1830px;
+    left: 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    color: #444444;
+}
+.pic__one{
+    background: url(./image/Object\ mobile.png)center no-repeat;
+    position: relative;
+    top: -385px;
+    left: -3px;
+}
+.pic__two{
+    background: url(./image/Object\ \(1\)mobile.png)center no-repeat;
+    position: relative;
+    top: -565px;
+    left: -3px;
+}
+.pic__three{
+    background: url(./image/Object\ \(2\)mobile.png)center no-repeat;
+    position: relative;
+    top: -745px;
+    left: -3px;
+}
+.pic__four{
+    background: url(./image/Object\ \(3\)mobile.png)center no-repeat;
+    position: relative;
+    top: -925px;
+    left: -3px;
+}
+.pic__five{
+    background: url(./image/Object\ \(4\)mobile.png)center no-repeat;
+    position: relative;
+    top: -1106px;
+    left: -153px;
+}
+.pic__six{
+    background: url(./image/Object\ \(5\)mobile.png)center no-repeat;
+    position: relative;
+    top: -1285px;
+    left: -153px;
+}
+.pic__seven{
+    background: url(./image/Object\ \(6\)mobile.png)center no-repeat;
+    position: relative;
+    top: -1465px;
+    left: -3px;
+}
+
+.name1{
+    position: relative;
+    top: 132px;
+    left: 2px;
+    height: 27px;
+    line-height: 27px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+.name2{
+    position: relative;
+    top: 139px;
+    left: -13px;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    overflow-wrap: break-word;
+}
+.name3{
+    position: relative;
+    top: 128px;
+    left: 0px;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    overflow-wrap: break-word;
+}
+.name4{
+    position: relative;
+    top: 142px;
+    left: 0px;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    overflow-wrap: break-word;
+}
+.name5{
+    position: relative;
+    top: 141px;
+    left: -25px;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    overflow-wrap: break-word;
+}
+.name6{
+    position: relative;
+    top: 140px;
+    left: -33px;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    overflow-wrap: break-word;
+}
+.name7{
+    position: relative;
+    top: 141px;
+    left: 0px;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    overflow-wrap: break-word;
+}
+.form {
+    position: absolute;
+    width: 320px;
+    height: 158px;
+    left: 478px;
+    bottom: -372px;
+}
+
+.form__logo {
+    position: relative;
+    width: 280px;
+    height: 54px;
+    left: -479.5px;
+    top: -602px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #444444;
+}
+
+.form__question {
+    position: relative;
+    top: -581px;
+    left: -457px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 14px;
+}
+
+.form__button {
+    width: 279.12px;
+    height: 40px;
+    left: -460px;
+    top: -559px;
+    position: relative;
+    background: $coral;
+    border-radius: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+    border: none;
+    cursor: pointer;
+}
+
+.form__answer {
+    position: relative;
+    width: 275px;
+    height: 38px;
+    left: -460px;
+    top: -566px;
+    background: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-top: 2px $coral solid;
+    top: -156px;
+    width: 320px;
+    height: 224px;
+}
+
+@mixin globalworls($globalworls-font-family, $globalworls-position, $globalworls-top) {
+    font-family: 'Montserrat';
+    position: relative;
+    top: 40px;
+}
+
+.fotter_logo {
+    @include globalworls('Montserrat', relative, 35px);
+    top: 20px;
+    left: 98px;
+    width: 119px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FF4E50;
+}
+
+.list {
+    @include globalworls('Montserrat', relative, 40px);
+    top: 53px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    left: 3px;
+}
+
+.topMenu{
+    display: inline;
+    position: relative;
+    margin: 5px;
+    top: 5px;
+    left: -76px;
+}
+.bottomMenu{
+    position: relative;
+    top: 31px;
+    left: -262px;
+    margin: 5px;
+    display: inline;
+}
+
+.partners__footer {
+    @include globalworls('Montserrat', relative, 40px);
+    top: 129px;
+    left: -469px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+}
+
+.designedBy {
+    @include globalworls('Montserrat', relative, 40px) ;
+    top: 159px;
+    left: -540px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #CCCCCC;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.footer__logo2 {
+    @include globalworls('Montserrat', relative, 40px);
+    top: 89px;
+    left: -319px;
+}
+}

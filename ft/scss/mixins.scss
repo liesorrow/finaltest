@@ -1,0 +1,76 @@
+@mixin dreamshare__img__($dreamshare__img-width, $dreamshare__img-height) {
+    width: 300px;
+    height: 400px;
+}
+@mixin section__btn__($section__btn-width, $section__btn-height, $section__btn-background, $section__btn-border-radius, $section__btn-font-family, $section__btn-font-weight, $section__btn-font-size) {
+    height: 20px;
+    width: 70px;
+    background: $coral;
+    border-radius: 40px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10px;
+}
+@mixin step__title__($step__title-position, $step__title-width, $step__title-height, $step__title-font-family, $step__title-font-style, $step__title-font-weight, $step__title-font-size, $step__title-color) {
+    position: absolute;
+    width: 250px;
+    height: 58px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: $white;
+}
+@mixin step__text__($step__text-position, $step__text-width, $step__text-height, $step__text-font-family, $step__text-font-style, $step__text-font-weight, $step__text-font-size, $step__text-color) {
+    position: absolute;
+    width: 250px;
+    height: 58px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #E3E3E3;
+}
+@mixin about__person__firstType($about__person__firstType-position, $about__person__firstType-top, $about__person__firstType-left, $about__person__firstType-width, $about__person__firstType-height, $about__person__firstType-font-family, $about__person__firstType-font-style, $about__person__firstType-font-weight, $about__person__firstType-font-size, $about__person__firstType-text-align, $about__person__firstType-color) {
+    position: relative;
+    top: 35px;
+    left: 0px;
+    width: 221px;
+    height: 57px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+}
+@mixin about__person__secondType($about__person__secondType-position, $about__person__secondType-top, $about__person__secondType-left, $about__person__secondType-width, $about__person__secondType-height, $about__person__secondType-font-family, $about__person__secondType-font-style, $about__person__secondType-font-weight, $about__person__secondType-font-size, $about__person__secondType-text-align, $about__person__secondType-color) {
+    position: relative;
+    top: 40px;
+    left: 6px;
+    width: 221px;
+    height: 57px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+}
+@mixin name($name-position, $name-width, $name-height, $name-font-family, $name-font-style, $name-font-weight, $name-font-size, $name-color, $name-cursor) {
+    position: relative;
+    width: 209px;
+    height: 27px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+@mixin globalworls($globalworls-font-family, $globalworls-position, $globalworls-top) {
+    font-family: 'Montserrat';
+    position: relative;
+    top: 40px;
+}
+
